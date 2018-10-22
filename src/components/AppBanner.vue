@@ -17,8 +17,8 @@ export default {
 
 <style lang="scss">
   #banner {
-    min-height: 95vh;
-    background-attachment: fixed;
+    min-height: calc(95vh - 128px);
+    // background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-image: url('../assets/banner-image.jpg');

@@ -42,3 +42,16 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .fundraiser__single {
+    img {
+      transition: transform .2s ease;
+    }
+    &:hover {
+      img {
+        transform: scale(1.02);
+      }
+    }
+  }
+</style>

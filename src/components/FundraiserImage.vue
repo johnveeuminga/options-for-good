@@ -71,7 +71,8 @@ export default {
 
   #quitathon-img,
   #volunteerathon-img,
-  #homes-for-the-earth-img {
+  #homes-for-the-earth-img,
+  #colleges-for-good-img {
     max-width: 240px;
   }
 
