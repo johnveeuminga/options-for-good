@@ -109,6 +109,8 @@ export default {
       padding-left: 1.5em !important;
       padding-right: 1.5em !important;
       text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: .02em;
     }
   }
 
