@@ -66,18 +66,6 @@ export default {
 </script>
 
 <style lang="scss">
-  .fundraiser-grid {
-    > .container {
-      border-top: 2px solid #ddd;
-    }
-
-    &:first-child {
-      > .container {
-        border-top: 0;
-      }
-    }
-  }
-
   // #innovative-fundraising {
   //   background-color: #e5eef4;
   // }
