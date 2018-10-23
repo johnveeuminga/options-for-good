@@ -63,7 +63,7 @@ export default {
     }
 
     img {
-      max-width: 220px;
+      max-width: 240px;
       min-height: 90px;
       object-fit: contain;
     }
@@ -73,31 +73,31 @@ export default {
   #volunteerathon-img,
   #homes-for-the-earth-img,
   #colleges-for-good-img {
-    max-width: 240px;
+    max-width: 260px;
   }
 
   #environmental-debt-img {
-    max-width: 260px;
+    max-width: 280px;
   }
 
   #insight-in-mind-img,
   #world-wealth-calculator-img {
-    max-width: 300px;
+    max-width: 320px;
   }
 
   #loseathon-img {
-    max-width: 145px;
+    max-width: 165px;
   }
 
   #bake-for-good-img {
-    max-width: 160px;
+    max-width: 180px;
   }
 
   #run-for-good-img,
   #ride-for-good-img,
   #stands-for-freedom-img,
   #conscience-or-cotton-img {
-    max-width: 180px;
+    max-width: 200px;
   }
 
   #christmas-for-good-img,
@@ -106,6 +106,6 @@ export default {
   #crowdsourcing-for-the-poor-img,
   #counters-for-the-poor-img,
   #balanced-giving-img {
-    max-width: 200px;
+    max-width: 220px;
   }
 </style>

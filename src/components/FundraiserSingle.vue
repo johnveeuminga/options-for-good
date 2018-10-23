@@ -37,7 +37,7 @@ export default {
 
   computed: {
     fundraiserClass () {
-      return `fundraiser__single py-4 ${this.classProp}`
+      return `fundraiser__single pt-5 ${this.classProp}`
     }
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <section :id="$vnode.key" class="fundraiser-grid">
-    <div class="container py-5">
-      <h2 class="text-center fundraiser-grid__title">{{ fundraiser.label }}</h2>
+    <div class="container">
+      <h2 class="text-center fundraiser-grid__title pt-5">{{ fundraiser.label }}</h2>
       <div class="row justify-content-center">
         <div 
           v-for="(site, index) in fundraiser.sites"
@@ -18,7 +18,7 @@
       <div class="extra-content" v-if="expanded">
         <slot></slot>
       </div>
-      <div class="see-more-container text-right">
+      <div class="see-more-container py-5 text-right">
         <a 
           href="#" 
           @click.prevent.stop="expanded = !expanded"
@@ -71,6 +71,7 @@ export default {
 <style lang="scss">
   .fundraiser-grid__title {
     font-size: 2.5rem;
+    margin-bottom: 0;
   }
 
   .fundraiser-grid__image {
