@@ -1,5 +1,7 @@
 <template>
-  <section id="banner">
+  <dynamic-banner
+    id="banner"
+  >
     <div class="banner__content">
       <div class="container text-center">
         <h2>A Host of Options to Do Good</h2>
@@ -13,12 +15,12 @@
         <i class="fas fa-angle-down"></i>
       </button>
     </div>
-  </section>
+  </dynamic-banner>
 </template>
 
 <script>
 export default {
-  
+
 }
 </script>
 
@@ -27,7 +29,7 @@ export default {
     min-height: calc(100vh - 128px);
     background-size: cover;
     background-position: center;
-    background-image: url('../assets/banner-image.jpg');
+    // background-image: url('../assets/banner-image-2.jpg');
     position: relative;
     &:before {
       content: '';
@@ -50,7 +52,6 @@ export default {
 
     h2 {
       font-size: 2.75rem;
-      // text-shadow: 0 2px 2px rgba(0,0,0,.7);
       margin-bottom: .375em; 
       font-weight: 900;
     }
@@ -63,7 +64,7 @@ export default {
 
   .banner__scroll-down-container {
     position: absolute;
-    bottom: 2%;
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
