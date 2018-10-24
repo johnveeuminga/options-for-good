@@ -63,7 +63,7 @@ export default {
 
   .banner__scroll-down-container {
     position: absolute;
-    bottom: 2%;
+    bottom: 10px;
     left: 0;
     right: 0;
     text-align: center;
