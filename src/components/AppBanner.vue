@@ -3,7 +3,6 @@
     <div class="banner__content">
       <div class="container text-center">
         <h2>A Host of Options to Do Good</h2>
-        <div class="btn btn-lg btn-primary">Donate</div>
       </div>
     </div>
     <div class="banner__scroll-down-container">
@@ -25,8 +24,7 @@ export default {
 
 <style lang="scss">
   #banner {
-    min-height: calc(95vh - 128px);
-    // background-attachment: fixed;
+    min-height: calc(100vh - 128px);
     background-size: cover;
     background-position: center;
     background-image: url('../assets/banner-image.jpg');
@@ -45,7 +43,7 @@ export default {
 
   .banner__content {
     position: absolute;
-    bottom: 20%;
+    bottom: 8%;
     left: 0;
     right: 0;
     color: #fff;
@@ -65,7 +63,7 @@ export default {
 
   .banner__scroll-down-container {
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     left: 0;
     right: 0;
     text-align: center;
@@ -76,10 +74,10 @@ export default {
     border-width: 2px;
     border-color: #EF4836;
     color: #EF4836;
-    font-size: 1.5em;
+    font-size: 1.25em;
     padding: 0;
-    height: 48px;
-    width: 48px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
