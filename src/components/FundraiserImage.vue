@@ -37,18 +37,18 @@ export default {
     }
   },
 
-  mounted () {
-    // We make sure that the image is existing before displaying the image.
-    // This prevents module not found error if an image is not found
-    import(`@/assets/logos/${this.imgName}`)
-      .then(img => {
-        this.img = img.default
-      })
-      .catch(err => {
-        //eslint-disable-next-line
-        console.log(err)
-      })
-  }
+  methods: {
+    getImg () {
+      this.img = require(`@/assets/logos/${this.imgName}`)
+    }
+  },
+
+  watch: {
+    img: {
+      immediate: true,
+      handler: 'getImg'
+    }
+  },
 }
 </script>
 

@@ -1,5 +1,7 @@
 <template>
-  <base-layout>
+  <base-layout 
+    :show-banner="false"
+  >
     <div class="container event py-4" :id="event.id">
       <p><span class="font-weight-bold">Note:</span> This website is still being built, and is partly done. When new pages are being built by web developers, they often host them at developer domains and links similar to the one you see in your address bar.</p>
     </div>

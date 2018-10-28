@@ -23,7 +23,7 @@ export default {
     props: {
     showBanner: {
       type: Boolean,
-      default: false,
+      default: true,
     }
   },
 
