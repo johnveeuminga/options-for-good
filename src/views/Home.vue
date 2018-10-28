@@ -78,31 +78,16 @@ export default {
     }
   }
 
-  // #innovative-fundraising {
-  //   background-color: #e5eef4;
-  // }
-
   #year-round-holiday-options {
     background-color: #eaf7ff;
   }
-
-  // #fundraising-classics {
-  //   background-color: #f8f1e2;
-  // }
 
   #help-the-poorest-half {
     background-color: #f8f1e2;
   }
 
-  // #free-modern-day-slaves {
-  //   background-color: #e5eef4;
-  // }
 
   #help-the-earth {
     background-color: #e1f7ea;
   }
-
-  // #do-good-together {
-  //   background-color: #f3eeff;
-  // }
 </style>

@@ -2,9 +2,11 @@
   <header class="site-header" id="site-header">
     <div class="container">
       <div class="header-top d-flex justify-content-between align-items-center py-1">
-        <a href="#" class="logo-link">
-          <img src="../assets/logo.png" class="navbar-logo" alt="CalendarForGood">
-        </a>
+        <img 
+          :src="logo" 
+          class="navbar-logo" 
+          alt="CalendarForGood"
+        >
         <div class="header-top__nav-section">
           <ul class="nav justify-content-end">
             <li class="nav-item">
@@ -64,6 +66,7 @@ export default {
     return {
      sticky: false,
      navPosition: false,
+     logo: null,
     }
   },
 
@@ -74,13 +77,31 @@ export default {
   },
 
   methods: {
-    handleScroll() {
+    handleScroll () {
       if( window.scrollY >= this.navPosition ) {
         this.sticky = true;
       } else {
         this.sticky = false;
       }
-    }
+    },
+
+    getLogo () {
+      if (this.$route.name === 'event') {
+        const {category, id} = this.$route.params
+
+        const event = this.$store.getters['fundraisers/getFundraiser'](category, id)
+        this.logo = require(`@/assets/logos/${category}/${event.imgName}`)
+      } else {
+        this.logo = require('@/assets/logo.png')
+      }
+    },
+  },
+
+  watch: {
+    logo: {
+      immediate: true,
+      handler: 'getLogo',
+    },
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="layout-base">
     <app-header />
-    <app-banner />
+    <app-banner v-if="showBanner" />
     <main class="site-content" id="content">
       <slot></slot>
     </main>
@@ -18,6 +18,13 @@ export default {
   components: {
     AppHeader,
     AppBanner,
+  },
+
+    props: {
+    showBanner: {
+      type: Boolean,
+      default: false,
+    }
   },
 
 }

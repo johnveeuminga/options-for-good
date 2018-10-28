@@ -5,10 +5,11 @@ module.exports = {
     'style-resources-loader': {
       preProcessor: 'scss',
       patterns: [
+        path.resolve(__dirname, 'src/styles/_variables.scss'),
         path.resolve(__dirname, 'node_modules/bootstrap/scss/_functions.scss'),
-        path.resolve(__dirname, 'src/styles/style.scss'),
         path.resolve(__dirname, 'node_modules/bootstrap/scss/_variables.scss'),        
         path.resolve(__dirname, 'node_modules/bootstrap/scss/_mixins.scss'),        
+        path.resolve(__dirname, 'src/styles/_functions.scss'),
       ]
     }
   }

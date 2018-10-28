@@ -13,7 +13,9 @@ const actions = {
 }
 
 const getters  = {
-
+  getFundraiser: state => (category, id) => {
+    return state.data[category].sites.find(site => site.id === id)
+  }
 }
 
 export default {
