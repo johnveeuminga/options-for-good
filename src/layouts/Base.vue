@@ -5,12 +5,14 @@
     <main class="site-content" id="content">
       <slot></slot>
     </main>
+    <shared-footer />
   </div>
 </template>
 
 <script>
 import AppHeader from '@/components/AppHeader.vue'
 import AppBanner from '@/components/AppBanner.vue'
+import SharedFooter from '@/components/SharedFooter.vue'
 
 export default {
   name: 'BaseLayout',
@@ -18,6 +20,7 @@ export default {
   components: {
     AppHeader,
     AppBanner,
+    SharedFooter,
   },
 
     props: {

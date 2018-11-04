@@ -1,12 +1,12 @@
 <template>
   <section :id="$vnode.key" class="fundraiser-grid">
-    <div class="container">
+    <div class="container fundraiser__container p-0">
       <h2 class="text-center fundraiser-grid__title pt-5">{{ fundraiser.label }}</h2>
-      <div class="row justify-content-center">
+      <div class="row no-gutters ">
         <div 
           v-for="(site, index) in fundraiser.sites"
           :key="site.id"
-          :class="['col-md-4', 'text-center', {'d-none': index >= itemsToShow}]"
+          :class="['col-md-4 text-center fundraiser__col', {'d-none': index >= itemsToShow}]"
         >
           <router-link :to="`events/${$vnode.key}/${site.id}`">
             <fundraiser-single 
@@ -74,7 +74,15 @@ export default {
   .fundraiser-grid__title {
     font-size: 2.5rem;
     margin-bottom: 0;
+    margin-bottom: 5px;
   }
+
+  // .fundraiser__container {
+  //   .row {
+  //     margin-left: -30px;
+  //     margin-right: -30px;
+  //   }
+  // }
 
   .fundraiser-grid__image {
     max-width: 220px;

@@ -6,6 +6,7 @@ import store from './store/store'
 // Plugins
 import smoothScroll from './plugins/smoothScroll'
 
+
 Vue.config.productionTip = false
 
 Vue.use(smoothScroll)
