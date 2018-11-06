@@ -2,7 +2,7 @@
   <section :id="$vnode.key" class="fundraiser-grid">
     <div class="container fundraiser__container p-0">
       <h2 class="text-center fundraiser-grid__title pt-5">{{ fundraiser.label }}</h2>
-      <div class="row no-gutters ">
+      <div class="row">
         <div 
           v-for="(site, index) in fundraiser.sites"
           :key="site.id"
@@ -77,12 +77,18 @@ export default {
     margin-bottom: 5px;
   }
 
-  // .fundraiser__container {
-  //   .row {
-  //     margin-left: -30px;
-  //     margin-right: -30px;
-  //   }
-  // }
+  .fundraiser__container {
+    .row {
+      margin-left: -30px;
+      margin-right: -30px;
+
+      > .col,
+      > [class*="col-"] {
+        padding-right: 30px;
+        padding-left: 30px;
+      }
+    }
+  }
 
   .fundraiser-grid__image {
     max-width: 220px;

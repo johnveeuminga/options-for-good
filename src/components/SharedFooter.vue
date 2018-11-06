@@ -41,14 +41,14 @@
             </template>
             <template v-else>
               <p> Helping non-profits and their supporters <br/> <strong>RAISE MONEY.  RAISE AWARENESS. <br/> CHANGE THE WORLD</strong>  </p>
-              <button class="button is-primary">Learn More</button>
+              <button class="btn btn-primary">Learn More</button>
             </template>
           </div>
         </div>
       </div>
     </div>
     <div class="footer__copyright">
-      <div class="container">
+      <div class="container-fluid">
         <template v-if="$slots.footer__copyright">
           <slot name="footer__copyright"></slot>
         </template>
@@ -114,7 +114,7 @@
     columns: 2;
     margin-left: 0;
     padding: 0;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   .footer__navigation a,
@@ -125,10 +125,6 @@
 
   .footer__logo-container { 
     text-align: center; 
-
-    p {
-      font-size: .875em;
-    }
   }
 
   .footer__logo-container img { 
@@ -141,6 +137,12 @@
     font-size: 1.125em;
     text-align: center;
     line-height: 30px;
+
+    .btn {
+      font-size: 0.75em;
+      padding: .5em;
+      letter-spacing: normal;
+    }
   }
 
   .footer__copyright {
