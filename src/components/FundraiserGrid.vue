@@ -2,11 +2,11 @@
   <section :id="$vnode.key" class="fundraiser-grid">
     <div class="container fundraiser__container p-0">
       <h2 class="text-center fundraiser-grid__title pt-5">{{ fundraiser.label }}</h2>
-      <div class="row">
+      <div class="fundraiser-grid__row d-flex flex-wrap">
         <div 
           v-for="(site, index) in fundraiser.sites"
           :key="site.id"
-          :class="['col-md-4 text-center fundraiser__col', {'d-none': index >= itemsToShow}]"
+          :class="['fundraiser-grid__col text-center fundraiser__col', {'d-none': index >= itemsToShow}]"
         >
           <router-link :to="`events/${$vnode.key}/${site.id}`">
             <fundraiser-single 
@@ -78,14 +78,23 @@ export default {
   }
 
   .fundraiser__container {
-    .row {
-      margin-left: -30px;
-      margin-right: -30px;
+    .fundraiser-grid__row  {
+      margin-left: -15px;
+      margin-right: -15px;
+      justify-content: space-between;
 
-      > .col,
-      > [class*="col-"] {
-        padding-right: 30px;
-        padding-left: 30px;
+      .fundraiser-grid__col {
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        @include media-breakpoint-up('lg') {
+          max-width: 27%;
+          flex-basis: 27%;
+        }
       }
     }
   }
